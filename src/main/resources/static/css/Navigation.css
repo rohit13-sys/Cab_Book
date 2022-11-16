@@ -1,0 +1,90 @@
+@charset "ISO-8859-1";
+
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.9;
+	background-image: url("../images/cab9.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.bg-custom-1 {
+	background-color: #85144b;
+}
+
+.bg-custom-2 {
+	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.card-img {
+	opacity: 0.5;
+	border-radius: inherit;
+}
+
+.button {
+	padding: 10px;
+	font-size: 20px;
+	width: 180px;
+	margin-top: -50px;
+	margin-bottom: 20px;
+	border-radius: 12px;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+}
+
+.dropdown-menu {
+	left: -100%
+}
+
+.card-img-overlay {
+	padding: 2.5rem;
+}
+
+.navbar {
+	box-shadow: 0 6px 8px #0005, 0 10px 25px #0005;
+}
+
+.card {
+	border-radius: 50px;
+	box-shadow: 0 6px 8px #0004, 0 10px 25px #0004, 0 6px 8px #0006, 0 10px
+		25px #0005;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu {
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		transition: .3s;
+		margin-top: 0;
+	}
+	.navbar .nav-item:hover .nav-link {
+		color: #fff;
+	}
+	.navbar .dropdown-menu.fade-down {
+		top: 80%;
+		transform: rotateX(-75deg);
+		transform-origin: 0% 0%;
+	}
+	.navbar .dropdown-menu.fade-up {
+		top: 180%;
+	}
+	.navbar .nav-item:hover .dropdown-menu {
+		transition: .3s;
+		opacity: 1;
+		visibility: visible;
+		top: 100%;
+		transform: rotateX(0deg);
+	}
+}

@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('../images/homecab.jpg');
+  background-size: cover;
+  background-position: center center;
+}
